@@ -229,7 +229,7 @@
         
         
         
-          142 分钟
+          143 分钟
         
       </span>
     
@@ -475,393 +475,56 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-inline-math-container mjx-container { zoom: 0.95; }
 
 
-:root {
-    --side-bar-bg-color: #fafafa;
-    --control-text-color: #777;
-}
-
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-/* open-sans-regular - latin-ext_latin */
-  /* open-sans-italic - latin-ext_latin */
-    /* open-sans-700 - latin-ext_latin */
-    /* open-sans-700italic - latin-ext_latin */
-  html {
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-}
-
-body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
-}
-
-#write {
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
-}
-
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1024px;
-	}
-}
-
-@media only screen and (min-width: 1800px) {
-	#write {
-		max-width: 1200px;
-	}
-}
-
-#write > ul:first-child,
-#write > ol:first-child{
-    margin-top: 30px;
-}
-
-a {
-    color: #4183C4;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
-}
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
-}
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-h1 {
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
-}
-h2 {
-    font-size: 1.75em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
-}
-
-/*@media print {
-    .typora-export h1,
-    .typora-export h2 {
-        border-bottom: none;
-        padding-bottom: initial;
-    }
-
-    .typora-export h1::after,
-    .typora-export h2::after {
-        content: "";
-        display: block;
-        height: 100px;
-        margin-top: -96px;
-        border-top: 1px solid #eee;
-    }
-}*/
-
-h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
-}
-h4 {
-    font-size: 1.25em;
-}
-h5 {
-    font-size: 1em;
-}
-h6 {
-   font-size: 1em;
-    color: #777;
-}
-p,
-blockquote,
-ul,
-ol,
-dl,
-table{
-    margin: 0.8em 0;
-}
-li>ol,
-li>ul {
-    margin: 0 0;
-}
-hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-}
-
-li p.first {
-    display: inline-block;
-}
-ul,
-ol {
-    padding-left: 30px;
-}
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-}
-blockquote {
-    border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
-    color: #777777;
-}
-blockquote blockquote {
-    padding-right: 0;
-}
-table {
-    padding: 0;
-    word-break: initial;
-}
-table tr {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 0;
-}
-table tr:nth-child(2n),
-thead {
-    background-color: #f8f8f8;
-}
-table th {
-    font-weight: bold;
-    border: 1px solid #dfe2e5;
-    border-bottom: 0;
-    margin: 0;
-    padding: 6px 13px;
-}
-table td {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 6px 13px;
-}
-table th:first-child,
-table td:first-child {
-    margin-top: 0;
-}
-table th:last-child,
-table td:last-child {
-    margin-bottom: 0;
-}
-
-.CodeMirror-lines {
-    padding-left: 4px;
-}
-
-.code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-    border-top: 1px solid #eef2f2;
-}
-
-.md-fences,
-code,
-tt {
-    border: 1px solid #e7eaed;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-}
-
-code {
-    background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
-}
-
-.md-fences {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-top: 8px;
-    padding-bottom: 6px;
-}
-
-
-.md-task-list-item > input {
-  margin-left: -1.3em;
-}
-
-@media print {
-    html {
-        font-size: 13px;
-    }
-    pre {
-        page-break-inside: avoid;
-        word-wrap: break-word;
-    }
-}
-
-.md-fences {
-	background-color: #f8f8f8;
-}
-#write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
-}
-
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
-}
-
-.md-mathjax-midline {
-    background: #fafafa;
-}
-
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
-}
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-.md-image>.md-meta {
-    /*border: 1px solid #ddd;*/
-    border-radius: 3px;
-    padding: 2px 0px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
-}
-
-.md-tag {
-    color: #a7a7a7;
-    opacity: 1;
-}
-
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
-}
-
-.sidebar-tabs {
-    border-bottom: none;
-}
-
-#typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-}
-
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
-}
-
-/** focus mode */
-.on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
-}
-
-header, .context-menu, .megamenu-content, footer{
-    font-family: "Segoe UI", "Arial", sans-serif;
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
-    visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
-    background-color: var(--side-bar-bg-color);
-}
-
-.md-lang {
-    color: #b4654d;
-}
-
-/*.html-for-mac {
-    --item-hover-bg-color: #E6F0FE;
-}*/
-
-#md-notification .btn {
-    border: 0;
-}
-
-.dropdown-menu .divider {
-    border-color: #e5e5e5;
-    opacity: 0.4;
-}
-
-.ty-preferences .window-content {
-    background-color: #fafafa;
-}
-
-.ty-preferences .nav-group-item.active {
-    color: white;
-    background: #999;
-}
-
-.menu-item-container a.menu-style-btn {
-    background-color: #f5f8fa;
-    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
-}
-
-
-
-</style><title></title>
+<p>:root {<br>    –side-bar-bg-color: #fafafa;<br>    –control-text-color: #777;<br>}</p>
+<p>@include-when-export url(<a target="_blank" rel="noopener" href="https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext">https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext</a>);</p>
+<p>&#x2F;* open-sans-regular - latin-ext_latin <em>&#x2F;<br>  &#x2F;</em> open-sans-italic - latin-ext_latin <em>&#x2F;<br>    &#x2F;</em> open-sans-700 - latin-ext_latin <em>&#x2F;<br>    &#x2F;</em> open-sans-700italic - latin-ext_latin *&#x2F;<br>  html {<br>    font-size: 16px;<br>    -webkit-font-smoothing: antialiased;<br>}</p>
+<p>body {<br>    font-family: “Open Sans”,”Clear Sans”, “Helvetica Neue”, Helvetica, Arial, ‘Segoe UI Emoji’, sans-serif;<br>    color: rgb(51, 51, 51);<br>    line-height: 1.6;<br>}</p>
+<p>#write {<br>    max-width: 860px;<br>      margin: 0 auto;<br>      padding: 30px;<br>    padding-bottom: 100px;<br>}</p>
+<p>@media only screen and (min-width: 1400px) {<br>    #write {<br>        max-width: 1024px;<br>    }<br>}</p>
+<p>@media only screen and (min-width: 1800px) {<br>    #write {<br>        max-width: 1200px;<br>    }<br>}</p>
+<p>#write &gt; ul:first-child,<br>#write &gt; ol:first-child{<br>    margin-top: 30px;<br>}</p>
+<p>a {<br>    color: #4183C4;<br>}<br>h1,<br>h2,<br>h3,<br>h4,<br>h5,<br>h6 {<br>    position: relative;<br>    margin-top: 1rem;<br>    margin-bottom: 1rem;<br>    font-weight: bold;<br>    line-height: 1.4;<br>    cursor: text;<br>}<br>h1:hover a.anchor,<br>h2:hover a.anchor,<br>h3:hover a.anchor,<br>h4:hover a.anchor,<br>h5:hover a.anchor,<br>h6:hover a.anchor {<br>    text-decoration: none;<br>}<br>h1 tt,<br>h1 code {<br>    font-size: inherit;<br>}<br>h2 tt,<br>h2 code {<br>    font-size: inherit;<br>}<br>h3 tt,<br>h3 code {<br>    font-size: inherit;<br>}<br>h4 tt,<br>h4 code {<br>    font-size: inherit;<br>}<br>h5 tt,<br>h5 code {<br>    font-size: inherit;<br>}<br>h6 tt,<br>h6 code {<br>    font-size: inherit;<br>}<br>h1 {<br>    font-size: 2.25em;<br>    line-height: 1.2;<br>    border-bottom: 1px solid #eee;<br>}<br>h2 {<br>    font-size: 1.75em;<br>    line-height: 1.225;<br>    border-bottom: 1px solid #eee;<br>}</p>
+<p>&#x2F;*@media print {<br>    .typora-export h1,<br>    .typora-export h2 {<br>        border-bottom: none;<br>        padding-bottom: initial;<br>    }</p>
+<pre><code class="hljs">.typora-export h1::after,
+.typora-export h2::after &#123;
+    content: &quot;&quot;;
+    display: block;
+    height: 100px;
+    margin-top: -96px;
+    border-top: 1px solid #eee;
+&#125;
+</code></pre>
+<p>}*&#x2F;</p>
+<p>h3 {<br>    font-size: 1.5em;<br>    line-height: 1.43;<br>}<br>h4 {<br>    font-size: 1.25em;<br>}<br>h5 {<br>    font-size: 1em;<br>}<br>h6 {<br>   font-size: 1em;<br>    color: #777;<br>}<br>p,<br>blockquote,<br>ul,<br>ol,<br>dl,<br>table{<br>    margin: 0.8em 0;<br>}<br>li&gt;ol,<br>li&gt;ul {<br>    margin: 0 0;<br>}<br>hr {<br>    height: 2px;<br>    padding: 0;<br>    margin: 16px 0;<br>    background-color: #e7e7e7;<br>    border: 0 none;<br>    overflow: hidden;<br>    box-sizing: content-box;<br>}</p>
+<p>li p.first {<br>    display: inline-block;<br>}<br>ul,<br>ol {<br>    padding-left: 30px;<br>}<br>ul:first-child,<br>ol:first-child {<br>    margin-top: 0;<br>}<br>ul:last-child,<br>ol:last-child {<br>    margin-bottom: 0;<br>}<br>blockquote {<br>    border-left: 4px solid #dfe2e5;<br>    padding: 0 15px;<br>    color: #777777;<br>}<br>blockquote blockquote {<br>    padding-right: 0;<br>}<br>table {<br>    padding: 0;<br>    word-break: initial;<br>}<br>table tr {<br>    border: 1px solid #dfe2e5;<br>    margin: 0;<br>    padding: 0;<br>}<br>table tr:nth-child(2n),<br>thead {<br>    background-color: #f8f8f8;<br>}<br>table th {<br>    font-weight: bold;<br>    border: 1px solid #dfe2e5;<br>    border-bottom: 0;<br>    margin: 0;<br>    padding: 6px 13px;<br>}<br>table td {<br>    border: 1px solid #dfe2e5;<br>    margin: 0;<br>    padding: 6px 13px;<br>}<br>table th:first-child,<br>table td:first-child {<br>    margin-top: 0;<br>}<br>table th:last-child,<br>table td:last-child {<br>    margin-bottom: 0;<br>}</p>
+<p>.CodeMirror-lines {<br>    padding-left: 4px;<br>}</p>
+<p>.code-tooltip {<br>    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);<br>    border-top: 1px solid #eef2f2;<br>}</p>
+<p>.md-fences,<br>code,<br>tt {<br>    border: 1px solid #e7eaed;<br>    background-color: #f8f8f8;<br>    border-radius: 3px;<br>    padding: 0;<br>    padding: 2px 4px 0px 4px;<br>    font-size: 0.9em;<br>}</p>
+<p>code {<br>    background-color: #f3f4f4;<br>    padding: 0 2px 0 2px;<br>}</p>
+<p>.md-fences {<br>    margin-bottom: 15px;<br>    margin-top: 15px;<br>    padding-top: 8px;<br>    padding-bottom: 6px;<br>}</p>
+<p>.md-task-list-item &gt; input {<br>  margin-left: -1.3em;<br>}</p>
+<p>@media print {<br>    html {<br>        font-size: 13px;<br>    }<br>    pre {<br>        page-break-inside: avoid;<br>        word-wrap: break-word;<br>    }<br>}</p>
+<p>.md-fences {<br>    background-color: #f8f8f8;<br>}<br>#write pre.md-meta-block {<br>    padding: 1rem;<br>    font-size: 85%;<br>    line-height: 1.45;<br>    background-color: #f7f7f7;<br>    border: 0;<br>    border-radius: 3px;<br>    color: #777777;<br>    margin-top: 0 !important;<br>}</p>
+<p>.mathjax-block&gt;.code-tooltip {<br>    bottom: .375rem;<br>}</p>
+<p>.md-mathjax-midline {<br>    background: #fafafa;<br>}</p>
+<p>#write&gt;h3.md-focus:before{<br>    left: -1.5625rem;<br>    top: .375rem;<br>}<br>#write&gt;h4.md-focus:before{<br>    left: -1.5625rem;<br>    top: .285714286rem;<br>}<br>#write&gt;h5.md-focus:before{<br>    left: -1.5625rem;<br>    top: .285714286rem;<br>}<br>#write&gt;h6.md-focus:before{<br>    left: -1.5625rem;<br>    top: .285714286rem;<br>}<br>.md-image&gt;.md-meta {<br>    &#x2F;<em>border: 1px solid #ddd;</em>&#x2F;<br>    border-radius: 3px;<br>    padding: 2px 0px 0px 4px;<br>    font-size: 0.9em;<br>    color: inherit;<br>}</p>
+<p>.md-tag {<br>    color: #a7a7a7;<br>    opacity: 1;<br>}</p>
+<p>.md-toc {<br>    margin-top:20px;<br>    padding-bottom:20px;<br>}</p>
+<p>.sidebar-tabs {<br>    border-bottom: none;<br>}</p>
+<p>#typora-quick-open {<br>    border: 1px solid #ddd;<br>    background-color: #f8f8f8;<br>}</p>
+<p>#typora-quick-open-item {<br>    background-color: #FAFAFA;<br>    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;<br>    border-style: solid;<br>    border-width: 1px;<br>}</p>
+<p>&#x2F;** focus mode *&#x2F;<br>.on-focus-mode blockquote {<br>    border-left-color: rgba(85, 85, 85, 0.12);<br>}</p>
+<p>header, .context-menu, .megamenu-content, footer{<br>    font-family: “Segoe UI”, “Arial”, sans-serif;<br>}</p>
+<p>.file-node-content:hover .file-node-icon,<br>.file-node-content:hover .file-node-open-state{<br>    visibility: visible;<br>}</p>
+<p>.mac-seamless-mode #typora-sidebar {<br>    background-color: #fafafa;<br>    background-color: var(–side-bar-bg-color);<br>}</p>
+<p>.md-lang {<br>    color: #b4654d;<br>}</p>
+<p>&#x2F;<em>.html-for-mac {<br>    –item-hover-bg-color: #E6F0FE;<br>}</em>&#x2F;</p>
+<p>#md-notification .btn {<br>    border: 0;<br>}</p>
+<p>.dropdown-menu .divider {<br>    border-color: #e5e5e5;<br>    opacity: 0.4;<br>}</p>
+<p>.ty-preferences .window-content {<br>    background-color: #fafafa;<br>}</p>
+<p>.ty-preferences .nav-group-item.active {<br>    color: white;<br>    background: #999;<br>}</p>
+<p>.menu-item-container a.menu-style-btn {<br>    background-color: #f5f8fa;<br>    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));<br>}</p>
+<p></style><title></title></p>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
 <div id='write'  class=''><h1 id='我的测试博客页面'><span>我的测试博客页面</span></h1><h1 id='标题'><span>标题</span></h1><h2 id='二级'><span>二级</span></h2><h3 id='3'><span>3</span></h3><h3 id='4'><span>4</span></h3><h3 id='5'><span>5</span></h3><h3 id='6'><span>6</span></h3><p>&nbsp;</p></div></div>
